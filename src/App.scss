@@ -1,0 +1,54 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+
+
+body {
+  background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(6,212,255,1) 100%);
+  
+  // // background-image: linear-gradient(#35C25A, #46CE89, #30BCE0, #077BD0, #0E4E91);
+  // background-image: linear-gradient(#077BD0, #0E4E91);
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+section {
+  // height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+#About {
+  min-height: 100vh;
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

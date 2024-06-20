@@ -1,0 +1,97 @@
+@import "../../app.scss";
+
+
+
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #0E4E91;
+    padding: 40px 0;
+    border-top: 1px solid rgb(139, 139, 139);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    margin-top: 150px;
+    
+    .social a{
+        font-size: 24px;
+        color: black;
+        border: 2px solid rgb(79, 79, 79);
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 8px;
+        opacity: 0.7;
+        transition: 0.3s ease;
+    }
+    .social a:hover{
+       transform: scale(1.2)translateY(-10px);
+       opacity: 1;
+       color: rgb(255, 78, 78); 
+       border: 2px solid rgb(255, 78, 78);
+    }
+}
+
+.footer ul{
+    margin-top: 0;
+    padding-right: 5px;
+    padding-top: 15px;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+
+    li a{
+        color: black;
+        border-bottom:3px solid transparent;
+        transition: 0.3s ease;
+    }
+    li a:hover{
+        border-bottom: 3px solid rgb(255, 78, 78);
+    }
+    li{
+        display: inline-block;
+        padding: 0 15px;
+    }
+}
+
+.copyright{
+    margin-top: 15px;
+    text-align:center;
+    font-size: 12px;
+    color: rgb(98, 98, 98);
+}
+
+
+.connect {
+    margin-top: 10px;
+    gap: 10px;
+    display: grid;
+    margin-left:40px;
+
+    a i {
+        font-size: 14px;
+        color: black;
+        // border: 2px solid rgb(79, 79, 79);
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        display: inline-block;
+        text-align: center;
+        // border-radius: 50%;
+        margin: 0 8px;
+        opacity: 0.7;
+        transition: 0.3s ease;
+    }
+    .phone{
+        margin-left:40px;
+    }
+}
+
+
