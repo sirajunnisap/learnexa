@@ -7,6 +7,9 @@ import Careers from "./components/careers/Careers"
 import Footer from "./components/footer/Footer"
 import About from "./components/about/About"
 import Testimonials from "./components/testimonials/Testimonials"
+import Features from "./components/features/Features"
+import Methods from "./components/methods/Methods"
+import Cards from "./components/cards/Cards"
 
 function App() {
   
@@ -22,14 +25,21 @@ function App() {
       <About/>
       </section>
   
-
+<section id="features">
+    <Features/>
+</section>
       
-
-        {/* <Careers /> */}
+<section id="Cards">
+<Cards />
+</section>
+       
 
        {/* <section id="Testimonials">
         <Testimonials/>
       </section> */}
+      <section id="Methods">
+        <Methods/>
+      </section>
       <section id="Contact">
         <Contact />
         <Footer/>

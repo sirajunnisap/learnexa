@@ -74,7 +74,7 @@ const Hero = () => {
         Learnexa Academy 
       </motion.div>
       <div className="heroimageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/hero2.jpg" alt="" />
       </div>
     </div>
   );
