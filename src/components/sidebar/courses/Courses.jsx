@@ -29,14 +29,14 @@ const itemVariants = {
 const Courses = () => {
   const items = [
     { name: "HOMEPAGE", path: "/" },
-    { name: "FEATURES", path: "/features" },
-    { name: "SERVICES", path: "/services" },
-    { name: "COURSES", path: "/courses" },
-    { name: "TESTIMONIALS", path: "/testimonials" },
-    { name: "TEACHERS", path: "/teachers" },
-    { name: "OUR METHOD", path: "/our-method" },
-    { name: "CONTACT", path: "/contact" },
-    { name: "ABOUT", path: "/about" },
+    { name: "FEATURES", path: "FEATURES" },
+    { name: "SERVICES", path: "SERVICES" },
+    { name: "COURSES", path: "COURSES" },
+    { name: "TESTIMONIALS", path: "TESTIMONIALS" },
+    { name: "TEACHERS", path: "TEACHERS" },
+    { name: "OUR METHOD", path: "METHODS" },
+    { name: "CONTACT", path: "CONTACT" },
+    { name: "ABOUT", path: "ABOUT" },
     { name: "ARABIC", path: "/arabic" },
     { name: "ENGLISH", path: "/english" },
     { name: "HINDI", path: "/hindi" }

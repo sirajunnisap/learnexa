@@ -74,32 +74,32 @@ import Navbar from '../components/navbar/Navbar';
 const HomePage = () => {
   return (
     <div>
-      <section id="Homepage">
+      <section id="HOMEPAGE">
         <Navbar />
         <Hero />
       </section>
 
-      <section id="About">
+      <section id="ABOUT">
         <About />
       </section>
 
-      <section id="features">
+      <section id="FEATURES">
         <Features />
       </section>
 
-      <section id="Cards">
+      <section id="CARDS">
         <Cards />
       </section>
 
-      <section id="Methods">
+      <section id="METHODS">
         <Methods />
       </section>
 
-      <section id="Testimonials">
+      <section id="TESTIMONIALS">
         <Testimonials />
       </section>
 
-      <section id="Contact">
+      <section id="CONTACT">
         <Contact />
         <Footer />
       </section>
