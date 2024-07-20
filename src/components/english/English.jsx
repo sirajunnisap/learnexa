@@ -75,7 +75,7 @@ const English = () => {
            
             {/* <div className="tutors"> */}
             <Tutors content={tutorCnt}/>
-            {/* </div> */}
+          
            
         </section>
         <section>

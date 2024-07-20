@@ -1,4 +1,6 @@
-import { motion } from "framer-motion";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const variants = {
   open: {
@@ -25,22 +27,36 @@ const itemVariants = {
 };
 
 const Courses = () => {
-  const items = ["HOMEPAGE","FEATURES", "SERVIECES", "COURSES", "TESTIMOIEALS","TEACHERS","OUR METHOD","CONTACT","ABOUT"];
+  const items = [
+    { name: "HOMEPAGE", path: "/" },
+    { name: "FEATURES", path: "/features" },
+    { name: "SERVICES", path: "/services" },
+    { name: "COURSES", path: "/courses" },
+    { name: "TESTIMONIALS", path: "/testimonials" },
+    { name: "TEACHERS", path: "/teachers" },
+    { name: "OUR METHOD", path: "/our-method" },
+    { name: "CONTACT", path: "/contact" },
+    { name: "ABOUT", path: "/about" },
+    { name: "ARABIC", path: "/arabic" },
+    { name: "ENGLISH", path: "/english" },
+    { name: "HINDI", path: "/hindi" }
+  ];
 
   return (
     <motion.div className="links" variants={variants}>
-      {items.map((item) => (
-        <motion.a
-          href={`#${item}`}
-          key={item}
-          variants={itemVariants}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          {item}
-        </motion.a>
-      ))}
-    </motion.div>
+    {items.map((item) => (
+      <motion.div
+        key={item.name}
+        variants={itemVariants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Link to={item.path}>
+          {item.name}
+        </Link>
+      </motion.div>
+    ))}
+  </motion.div>
   );
 };
 
