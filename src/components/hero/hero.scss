@@ -8,7 +8,8 @@
   position: relative;
   // background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(6,212,255,1) 100%);
   background-color: white;
-
+  z-index: 1;
+  
   .herowrapper {
     max-width: 1366px;
     height: 100%;
@@ -70,6 +71,8 @@
     top: 0;
     right: 0;
     width: 50%;
+    z-index: 0;
+
     @include mobile {
       height: 50%;
       width: 100%;

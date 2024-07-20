@@ -7,6 +7,8 @@ const Background = ({ language }) => {
     hindi: ["अ", "इ", "उ", "न", "म", "स", "त", "ज", "ह", "ग", "व"],
   };
 
+  
+
   const characters = languages[language] || [];
 
   return (

@@ -175,7 +175,7 @@ body{
 .name {
   position: relative;
   width: fit-content;
-  line-height: 1;
+  line-height: 2;
   opacity: 0;
   transform: translateX(30px);
   transition: transform 1s .2s, opacity 1s .3s;
@@ -191,6 +191,7 @@ body{
 .name p {
   font-size: 12px;
   text-align: right;
+  opacity: 0.8;
 }
 
 .name p::before,

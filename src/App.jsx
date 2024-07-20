@@ -1,58 +1,52 @@
-import Navbar from "./components/navbar/Navbar"
-import './App.scss'
-import Arabic from './components/arabic/Arabic'
-import Hero from "./components/hero/Hero"
-import Contact from "./components/contact/Contact"
-import Careers from "./components/careers/Careers"
-import Footer from "./components/footer/Footer"
-import About from "./components/about/About"
-import Testimonials from "./components/testimonials/Testimonials"
-import Features from "./components/features/Features"
-import Methods from "./components/methods/Methods"
-import Cards from "./components/cards/Cards"
+// import "./App.scss";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import HomeRoute from "./Routes/home";
+// import ArabicRoute from "./Routes/arabic";
+// import EnglishRoute from "./Routes/english";
+// import HindiRoute from "./Routes/hindi";
+// // import ContactRoute from "./Routes/contact";
+// // import AboutRoute from "./Routes/about";
+// // import FeaturesRoute from "./Routes/features";
+// // import MethodRoute from "./Routes/method";
+// // import CoursesRoute from "./Routes/courses";
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/*" element={<HomeRoute />} />
+//         {/* <Route path="/arabic" element={<ArabicRoute />} />
+//         <Route path="/english" element={<EnglishRoute />} />
+//         <Route path="/hindi" element={<HindiRoute />} />
+//         <Route path="/contact" element={<ContactRoute />} />
+//         <Route path="/about" element={<AboutRoute />} />
+//         <Route path="/courses" element={<CoursesRoute />} />
+//         <Route path="/features" element={<FeaturesRoute />} />
+//         <Route path="/method" element={<MethodRoute />} /> */}
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomeRoute from './Routes/HomeRoute';
+import ArabicRoute from "./Routes/ArabicRoute";
+import EnglishRoute from "./Routes/EnglishRoute";
+import HindiRoute from "./Routes/HindiRoute";
 
 function App() {
-  
   return (
-    <>
-    <div>
-      <section id="Homepage">
-        <Navbar/>
-        <Hero/>
-      </section>
-    
-    <section id="About">
-      <About/>
-      </section>
-  
-<section id="features">
-    <Features/>
-</section>
-      
-<section id="Cards">
-<Cards />
-</section>
-       
-
-       {/* <section id="Testimonials">
-        <Testimonials/>
-      </section> */}
-      <section id="Methods">
-        <Methods/>
-      </section>
-      <section id="Contact">
-        <Contact />
-        <Footer/>
-      </section>
-{/* <section>
-  <Arabic/>
-</section> */}
-      
-        
-      
-    </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/*" element={<HomeRoute />} />
+         <Route path="/arabic" element={<ArabicRoute/>} />
+         <Route path="/english" element={<EnglishRoute />} />
+        <Route path="/hindi" element={<HindiRoute />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

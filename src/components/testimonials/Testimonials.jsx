@@ -23,7 +23,7 @@ const Testimonials = () => {
              <li className="">
                   <div className="testiwrapper">
                     <div className="thumbnail">
-                      <img src="/hero.png" alt="" />
+                      {/* <img src="/hero.png" alt="" /> */}
                     </div>
                     <div className="aside">
                       <p>

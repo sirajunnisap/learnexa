@@ -38,7 +38,10 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+
+ 
   return (
+    
     <div className="hero">
       <div className="herowrapper">
         <motion.div

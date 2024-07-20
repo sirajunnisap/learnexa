@@ -1,0 +1,10 @@
+.hindi-section {
+    position: relative; /* Ensure it's the stacking context for its children */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    overflow: hidden; /* Prevent overflow issues */
+    background: transparent; /* Ensure no background color is set */
+    z-index: 0; /* Set default stacking order */
+  }

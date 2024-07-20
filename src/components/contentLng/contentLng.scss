@@ -1,0 +1,223 @@
+
+@import "../../App.scss";
+
+.ctnt {
+  min-height: 100vh;
+    padding: 100px 15px;
+    
+    position: relative;
+    overflow: hidden; z-index:2;
+  
+  .ctntwrapper {
+    max-width: 1366px;
+    height: 300px;
+    margin: auto;
+
+
+    .ctnttextContainer {
+      width: 55%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 40px;
+        color: orange;
+        letter-spacing: 3px;
+        text-align:center;
+        @include mobile {
+          margin-top: 190px;
+          font-size: 20px;
+          padding: 0 10px ;
+        }
+      }
+
+      p {
+        font-size: 25px;
+        color: white;
+        text-align: justify;
+        @include mobile {
+          font-size: 20px;
+          padding: 20px;
+        }
+      }
+
+      .buttons {
+        button {
+          padding: 20px;
+          border: 1px solid rgba(9,9,121,1);
+          border-radius: 10px;
+          background-color: transparent;
+          color: rgba(9,9,121,1);
+          margin-right: 20px;
+          cursor: pointer;
+          font-weight: 300;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .ctntimageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 0;
+    padding-left: 30px;
+
+    @include mobile {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding-left: 30px;
+    }
+  }
+
+  // .slidingTextContainer {
+  //   position: absolute;
+  //   font-size: 50vh;
+  //   bottom: -120px;
+  //   white-space: nowrap;
+  //   color: #ffffff09;
+  //   width: 50%;
+  //   font-weight: bold;
+  // }
+}
+
+.ctntimageContainer img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.cards {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px; // Add some padding for spacing around the cards
+  gap: 20px; // Add some gap between the cards
+
+  .card {
+    background-color: #0E4E91;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(224, 224, 224, 0.25);
+    padding: 30px;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow: hidden;
+    width: calc(50% - 20px); // Ensure two cards fit per row, accounting for the gap
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box; // Ensure padding and border are included in the width
+    
+    @include mobile {
+      height: 50%;
+      width: 100%;
+
+      h2{
+        padding-bottom: 10px;
+      }
+      p{
+        text-align:justify;
+      }
+      
+    }
+  }
+}
+
+.tutors-cards {
+  margin-top: 50px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px; // Add some padding for spacing around the cards
+  gap: 30px; // Add some gap between the cards
+
+  .card {
+    margin-top: 50px;
+    background-color: white;
+    // border: 1px solid rgba(224, 224, 224, 0.25);
+    border-radius: 1em;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease;
+    // width: calc(50% - 20px); // Ensure two cards fit per row, accounting for the gap
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // box-sizing: border-box; // Ensure padding and border are included in the width
+    width: 300px;
+    height:max-content;
+    padding: 0;
+    margin: 0;
+   
+    img {
+      width: 120px;
+      height:200px;
+      object-fit: cover;
+      background-color: white;
+    }
+
+    .about {
+      background-color: #0E4E91;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      
+      .about-name{
+        font-weight: 800;
+        padding: 10px 0px;
+      }
+
+      .about-tag{
+        font-weight: lighter;
+        padding-bottom: 3px;
+      }
+
+      .about-descr{
+        font-weight: lighter;
+        padding: 5px;
+        color: rgb(188, 188, 188);
+        text-align: justify;
+
+      }
+    }
+  }
+}
