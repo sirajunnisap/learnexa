@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import './methods.scss';
+import './aboutUs.scss';
 import { motion } from 'framer-motion';
 
 // const textVariants = {
@@ -59,7 +59,7 @@ const imageVariants = {
 //   },
 // };
 
-const Methods = () => {
+const AboutUs = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -77,6 +77,24 @@ const Methods = () => {
 
   return (
     <div className="methods">
+       
+      <div className="wrapper">
+        <div className="box">
+          <p>a</p>
+          <p>B</p>
+          <p>c</p>
+          <p>D</p>
+          <p>e</p>
+          <p>f</p>
+          <p>G</p>
+          <p>h</p>
+          <p>I</p>
+          <p>j</p>
+          
+          
+          
+        </div>
+      </div>
       <div className="methodwrapper" style={{ flexDirection: isMobile ? 'column' : 'row' }}>
         <motion.div
           className="textContainer"
@@ -86,29 +104,19 @@ const Methods = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.1 }}
         >
-          <motion.h2 variants={textVariants}>the learnexa way</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Our Method
+          {/* <motion.h2 variants={textVariants} className='about-h2'>the learnexa way</motion.h2> */}
+          <motion.h1 variants={textVariants} className='about-h1'>
+            About Us
           </motion.h1>
-          <motion.p variants={textVariants}>
-            {/* Providing personalized tutoring services to students will assist in effective 
-            learning and lively communication. Further, this will provide a route to 
-            individual attention and care your child need. Most of the children find 
-            it difficult to adjust with the inflexible timing at school. But here,
-            you are able to schedule the time according to your convenience. 
-            This helps the child to sit in class with undivided attention.
-            Extracurricular activities provides a channel for reinforcing the lessons
-            learned in class. These activities are part of a well-rounded education. */}
-            Providing personalized tutoring services to students assists in effective learning 
-            and lively communication. This approach ensures individual attention and care for
-             your child. Most children find it difficult to adjust to inflexible school timings,
-              but here, you can schedule sessions at your convenience. We focus on developing 
-              strong writing and reading skills, ensuring students learn to speak, read, and
-               write proficiently. Extracurricular activities reinforce lessons learned in class 
-               and are part of a well-rounded education. These activities enhance both academic 
-               and personal growth. At Learnexa Academy, our comprehensive language programs cater 
-               to all aspects of language learning, providing a thorough and engaging education for 
-               your child.
+          <motion.p variants={textVariants} className='about-p'>
+          Learnexa was founded by passionate educators dedicated to transforming language education.
+           As an online platform, we focus on overcoming your challenges with various languages by 
+           providing creative and inspiring tools. Our personalized tutoring services cater to students
+            of all ages and academic levels, offering ease of access and flexible schedules.
+             This commitment has made us a trusted language training partner for thousands of learners worldwide.
+              At Learnexa, we believe learning has no age limit. If you are willing to learn, we are here 
+              to enhance your speaking, reading, and writing skills. Join us and experience the difference 
+              in your language proficiency.
           </motion.p>
         </motion.div>
     
@@ -131,4 +139,4 @@ const Methods = () => {
   );
 };
 
-export default Methods;
+export default AboutUs;

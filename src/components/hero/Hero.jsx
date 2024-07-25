@@ -50,15 +50,16 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web developer and UI designer
-          </motion.h1>
+          <motion.h1 variants={textVariants}>Let Learnexa help you speak English with ease.</motion.h1>
+          <motion.p variants={textVariants} className="main-p">
+           English learning with one-on-one mentorship, anytime and anywhere.
+          </motion.p>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
-              See the Latest Works
+            <a href="#"><i className="fa-brands fa-whatsapp    icon"></i></a>
+             <p className="whatsapp">Whatsapp Now To Join</p>
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            {/* <motion.button variants={textVariants}>Contact Me</motion.button> */}
           </motion.div>
           <motion.img
             variants={textVariants}

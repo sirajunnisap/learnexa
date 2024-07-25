@@ -1,75 +1,4 @@
-// import './cards.scss';
 
-// const Cards = () => {
-//   return (
-//     <div className='cards-section'>
-//         <div className="card-items">
-//           <div className="card-item">
-//             <div className="card-content">
-//               <h1>card info 1</h1>
-//               <p>
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-              
-//               </p>
-//               <div className='card-image'>
-//                 <img src="/hero2.jpg" alt="" />
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="card-item">
-//             <div className="card-content">
-//               <h1>card info 1</h1>
-//               <p>
-//               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-//               </p>
-//               <div className='card-image'>
-//                 <img src="/hero2.jpg" alt="" />
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="card-item">
-//           <div className="card-content">
-//               <h1>card info 1</h1>
-//               <p>
-//               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-//                </p>
-//               <div className='card-image'>
-//                 <img src="/hero2.jpg" alt="" />
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="card-item">
-//            <div className="card-content">
-//               <h1>card info 1</h1>
-//               <p>
-//               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-//                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-//                 pariatur tempore ab ipsa earum, esse maiores tenetur.
-//               </p>
-//               <div className='card-image'>
-//                 <img src="/hero2.jpg" alt="" />
-//               </div>
-//             </div>
-//           </div>
-//           </div>
-//     </div>
-//   )
-// }
-
-// export default Cards
 import './cards.scss';
 import { motion } from 'framer-motion';
 
@@ -99,13 +28,10 @@ const Cards = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <div className="card-content">
-            <h1>card info 1</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-            </p>
+          <h1>Personalized Plans</h1>
+          <p>
+          We curate plans for your child that rightfully serve outcomes unique to their need. Each child&apos;s learning journey is curated by experts who know how learning can be made better.</p>
+           
             <div className='card-image'>
               <img src="/hero2.jpg" alt="" />
             </div>
@@ -120,13 +46,11 @@ const Cards = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <div className="card-content">
-            <h1>card info 2</h1>
+            {/* <h1>card info 2</h1> */}
+            <h1> Anytime tutor support</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-            </p>
+              Our tutors are available for your child to help with any kind of confusion doubts and even exam-related anxiety to help your child lead with confidence. </p>
+            
             <div className='card-image'>
               <img src="/hero2.jpg" alt="" />
             </div>
@@ -141,13 +65,10 @@ const Cards = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <div className="card-content">
-            <h1>card info 3</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-            </p>
+          <h1> Weak area focus</h1>
+              <p>
+             
+              We provide special care to address the weak points from the get-go, from the first session till the last our first priority will be to provide satisfaction in conquering the child&apos;s weak areas. </p>
             <div className='card-image'>
               <img src="/hero2.jpg" alt="" />
             </div>
@@ -162,14 +83,11 @@ const Cards = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <div className="card-content">
-            <h1>card info 4</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              pariatur tempore ab ipsa earum, esse maiores tenetur.
-            </p>
-            <div className='card-image'>
+          <h1>  Student monitoring</h1>
+              <p>
+              each student is monitored with every little detail after each session gathering secure and complete data that allows us to inform you on your child&apos;s progress and the necessary next steps to take. pariatur tempore ab ipsa earum, esse maiores tenetur.
+              </p>
+             <div className='card-image'>
               <img src="/hero2.jpg" alt="" />
             </div>
           </div>

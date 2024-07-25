@@ -1,4 +1,4 @@
-import './features.scss';  
+import "./features.scss";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -24,55 +24,80 @@ const itemVariants = {
 const Features = () => {
   return (
     <>
-    <motion.div
+      {/* <motion.div */}
+      {/* 
+    <div
+
     className='features'
       variants={variants}
       initial="initial"
-      whileInView="animate"
     >
-     
+      */}
+
+      <div className="features">
         <ul>
-          <motion.li variants={itemVariants}> 
+          {/* < <motion.li variants={itemVariants}> 
             <span className="icon"><i className="fa-solid fa-user"></i></span>
             <span className="title">One to One Teaching</span>
-          </motion.li>
-          <motion.li variants={itemVariants}> 
-            <span className="icon"><i className="fa-solid fa-book"></i></span>
+          </motion.li> */}
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-user"></i>
+            </span>
+            <span className="title">One to One Teaching</span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-book"></i>
+            </span>
             <span className="title">Special Modules </span>
-          </motion.li>
-          <motion.li variants={itemVariants}>
-            <span className="icon"><i className="fa-solid fa-calendar"></i></span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-calendar"></i>
+            </span>
             <span className="title"> Flexible Scheduling</span>
-          </motion.li>
-          <motion.li variants={itemVariants}> 
-            <span className="icon"><i className="fa-solid fa-check"></i></span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-check"></i>
+            </span>
             <span className="title"> 100% Result</span>
-          </motion.li>
-          <motion.li variants={itemVariants}> 
-            <span className="icon"><i className="fa-solid fa-user-friends"></i></span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-user-friends"></i>
+            </span>
             <span className="title">Individual Attention</span>
-          </motion.li>
-          <motion.li variants={itemVariants}> 
-            <span className="icon"><i className="fa-solid fa-chart-line"></i></span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-chart-line"></i>
+            </span>
             <span className="title">Expert Assessments</span>
-          </motion.li>
-          <motion.li variants={itemVariants}> 
-            <span className="icon"><i className="fa-solid fa-stopwatch"></i></span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-stopwatch"></i>
+            </span>
             <span className="title">Result in 15 Days</span>
-          </motion.li>
-          <motion.li variants={itemVariants}> 
-            <span className="icon"><i className="fa-solid fa-chart-bar"></i></span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-chart-bar"></i>
+            </span>
             <span className="title">Progress Tracking</span>
-          </motion.li>
-          <motion.li variants={itemVariants}>
-            <span className="icon"><i className="fa-solid fa-book-reader"></i></span>
+          </li>
+          <li>
+            <span className="icon">
+              <i className="fa-solid fa-book-reader"></i>
+            </span>
             <span className="title">Reading and writing</span>
-          </motion.li>
+          </li>
         </ul>
-     
-    </motion.div>
+      </div>
     </>
   );
-}
+};
 
 export default Features;
