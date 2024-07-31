@@ -15,8 +15,8 @@ const Testimonials = () => {
         <div className="container">
           <div className="testi">
             <div className="head">
-              <h3>Testimonials</h3>
-              <p>See what people are saying.</p>
+              <h3 className="head-h3">what our students say</h3>
+              <p className="head-p">Discover our students&apos; opinions on our online language course</p>
             </div>
             <div className="body">
               <Swiper
@@ -47,11 +47,11 @@ const Testimonials = () => {
                     </div>
                     <div className="aside">
                       <p>
-                      I cannot express my gratitude enough towards Learnexa for the academic assistance they provided my child. The results have been exceptional, and my child &apos;s grades have improved significantly since beginning their online tuition with them. The teachers at Learnexa are highly experienced and incredibly supportive. They provided excellent guidance and personalized attention, which helped my child to gain confidence in their studies.
+                      Learnexa Language Academy is a very good English learning paltform.english house is a leaning platform that helped me to learn English
                       </p>
                       <div className="name">
                         <h4>ajith</h4>
-                        <p>father</p>
+                        <p>student</p>
                       </div>
                     </div>
                   </div>
@@ -63,13 +63,12 @@ const Testimonials = () => {
                     </div>
                     <div className="aside">
                       <p>
-                      My 10-year-old son, currently promoted to 6th standard, was very weak in the Hindi language. He was not able to properly read or write Hindi. After the 15 days of live class, he has shown a lot of improvement. Now he is able to read and write Hindi alphabets and words. Thank you, Sajna Ma&apos;am and Learnexa, for your support.
-
+                      This is very amazing. I can study well. This platform is very helpful to increase our language skill. All staffs are very responsive. Through this course we can learn  language easily. We always get our coaches and I enjoy it
 
                       </p>
                       <div className="name">
                         <h4>asha</h4>
-                        <p>mother</p>
+                        <p>student</p>
                       </div>
                     </div>
                   </div>
@@ -97,8 +96,7 @@ const Testimonials = () => {
                     </div>
                     <div className="aside">
                       <p>
-                      Learnexa Academy is the best platform for learning English. I joined Learnexa Academy 2 months ago. They provide different experienced trainers for each activity. My trainer also helps me improve my communication skills, and she is very kind and friendly in nature. After I joined Learnexa Academy, it helped me improve my confidence level and language as well.
-
+                      Thank you for your lessons. my grammer and vocabulary have improved so much, and i think my pronunciation has as well.Thank you soo much and i like the class very much
 
                       </p>
                       <div className="name">

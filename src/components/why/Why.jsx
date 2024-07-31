@@ -57,6 +57,8 @@ const Why = () => {
         </div>
       </div>
         <div className="timeline-items">
+
+          <h3 className="head">How our courses help you grow.</h3>
           <motion.div
             className="timeline-item"
             variants={textVariants1}

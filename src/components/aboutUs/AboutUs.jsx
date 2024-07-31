@@ -104,10 +104,11 @@ const AboutUs = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.1 }}
         >
-          {/* <motion.h2 variants={textVariants} className='about-h2'>the learnexa way</motion.h2> */}
+        
           <motion.h1 variants={textVariants} className='about-h1'>
-            About Us
+            About Us.
           </motion.h1>
+          <motion.h2 variants={textVariants} className='about-h2'>Rethinking How You Learn Languages.</motion.h2>
           <motion.p variants={textVariants} className='about-p'>
           Learnexa was founded by passionate educators dedicated to transforming language education.
            As an online platform, we focus on overcoming your challenges with various languages by 

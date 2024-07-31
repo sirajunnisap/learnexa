@@ -50,7 +50,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h1 variants={textVariants}>Let Learnexa help you speak English with ease.</motion.h1>
+          <motion.h3 className="hero-h3" variants={textVariants}><span>Learnexa</span>  Makes Language Learning Easy and Enjoyable.</motion.h3>
           <motion.p variants={textVariants} className="main-p">
            English learning with one-on-one mentorship, anytime and anywhere.
           </motion.p>

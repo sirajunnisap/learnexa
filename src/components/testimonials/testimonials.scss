@@ -8,11 +8,11 @@ $light-color: gray;
 .testi-section {
   // height: calc(100vh - 100px);
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(251, 251, 251);
   position: relative;
   height: 100vh;
   @include mobile {
-    padding: 0 10px;
+    // padding: 0 10px;
     margin-top: 100px;
     // height: calc(100vh - 100px);
     height: 100vh;
@@ -20,7 +20,7 @@ $light-color: gray;
 }
 
 .container {
-  padding: 4rem 1rem;
+  padding: 3rem 0;
   margin: 0 auto;
 }
 
@@ -28,20 +28,34 @@ $light-color: gray;
   padding: 1rem 0;
   font-size: 3.5rem;
   text-align: center;
+ 
 }
 
 .testi {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
+  // padding: 0;
 
   .head {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    padding: 25px 3px 30px;
 
-    h3 {
+    .head-h3 {
       font-size: 34px;
       font-weight: 800;
       color: $primary-color;
+
+      @include mobile{
+        font-size: 29px;
+      }
+    }
+
+    .head-p{
+      font-size: 18px;
+      color: black;
+      font-weight: 400; 
+      padding: 19px;
     }
   }
 }
@@ -50,8 +64,8 @@ $light-color: gray;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
-  padding: 30px 0;
+  gap: 30px;
+  padding: 0;
 
   .thumbnail, .thumbnail2 {
     width: 150px;
@@ -91,18 +105,30 @@ $light-color: gray;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(170, 170, 170, 0.25);
+    // padding: 30px 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow: hidden;
+    width:300px; // Ensure two cards fit per row, accounting for the gap
+    height: 250px;
+    margin-right:75px;
 
     @include mobile {
-      padding: 0 80px;
+      padding: 40px 20px  0px;
     }
 
     p {
       position: relative;
       font-size: 14px;
       line-height: normal;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       text-align: left;
-      color: black;
+      color: rgb(0, 0, 0);
+      line-height: 22px;
       &::before,
       &::after {
         font-family: serif;
@@ -117,8 +143,8 @@ $light-color: gray;
 
       &::before {
         content: open-quote;
-        top: -40px;
-        left: 10px;
+        top: -25px;
+        // left: px;
       }
 
       &::after {
@@ -187,7 +213,7 @@ $light-color: gray;
 
 .slider-controler {
   position: relative;
-  bottom: 8rem;
+  bottom: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,13 +278,13 @@ $light-color: gray;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: 3px; // Adjust the size as needed
-  height: 3px; // Adjust the size as needed
+  width: 6px; // Adjust the size as needed
+  height: 6px; // Adjust the size as needed
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: $primary-color;
-  width: 5px; // Adjust the active bullet size as needed
-  height: 5px; // Adjust the active bullet size as needed
+  width: 7px; // Adjust the active bullet size as needed
+  height: 7px; // Adjust the active bullet size as needed
 }

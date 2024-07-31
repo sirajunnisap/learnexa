@@ -15,7 +15,19 @@ const variants = {
     },
   },
 };
-
+const textVariants = {
+  hidden: {
+    scale: 0.8,
+    opacity: 0,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 const itemVariants = {
   initial: { y: 20, opacity: 0 },
   animate: { y: 0, opacity: 1 },
@@ -35,6 +47,7 @@ const Features = () => {
       */}
 
       <div className="features">
+      <motion.h2 variants={textVariants}>How <span>Learnexa</span> Works.</motion.h2>
         <ul>
           {/* < <motion.li variants={itemVariants}> 
             <span className="icon"><i className="fa-solid fa-user"></i></span>

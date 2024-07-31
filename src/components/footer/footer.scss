@@ -6,9 +6,9 @@
 .footer{
     bottom: 0;
     width: 100%;
-    background-color: white;
-    color: #0E4E91;
-    padding: 40px 0;
+    background-color: rgb(251,251,251);
+    color:rgba(9, 9, 121, 1);
+    padding: 40px 30px;
     border-top: 1px solid rgb(139, 139, 139);
     display: grid;
     align-items: center;
@@ -18,34 +18,53 @@
     
     .social a{
         font-size: 24px;
-        color: black;
-        border: 2px solid rgb(79, 79, 79);
-        width: 40px;
-        height: 40px;
+        color: rgba(9, 9, 121, 1);
+        // border: 2px solid rgb(79, 79, 79);
+        // width: 40px;
+        // height: 40px;
+        padding: 7px;
         line-height: 38px;
         display: inline-block;
         text-align: center;
-        border-radius: 50%;
-        margin: 0 8px;
+        // border-radius: 50%;
+        // margin: 0 px;
         opacity: 0.7;
         transition: 0.3s ease;
     }
-    .social a:hover{
-       transform: scale(1.2)translateY(-10px);
-       opacity: 1;
-       color: rgb(255, 78, 78); 
-       border: 2px solid rgb(255, 78, 78);
+    // .social a:hover{
+    //    transform: scale(1.2)translateY(-10px);
+    //    opacity: 1;
+    //    color: rgb(255, 78, 78); 
+    //    border: 2px solid rgb(255, 78, 78);
+    // }
+
+    .head-h4{
+        font-size: 15px;
+        font-weight: 500;
+        padding-top:15px;
     }
+    
+    .locate{
+        padding: 15px 0;
+        color: black;
+        font-size: 15px;
+        
+    }
+    
+
+    
 }
 
-.footer ul{
+.footer ul {
     margin-top: 0;
-    padding-right: 5px;
+    // padding-right: 5px;
     padding-top: 15px;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 1.6;
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 
     li a{
         color: black;
@@ -53,11 +72,11 @@
         transition: 0.3s ease;
     }
     li a:hover{
-        border-bottom: 3px solid rgb(255, 78, 78);
+        border-bottom: 3px solid #0E4E91;
     }
     li{
         display: inline-block;
-        padding: 0 15px;
+        // padding: 0 15px;
     }
 }
 
@@ -71,27 +90,25 @@
 
 .connect {
     margin-top: 10px;
-    gap: 10px;
     display: grid;
-    margin-left:40px;
-
+    // margin-left:40px;
+    color: black;
     a i {
         font-size: 14px;
-        color: black;
+        color:rgba(9, 9, 121, 1);
         // border: 2px solid rgb(79, 79, 79);
         width: 30px;
         height: 30px;
         line-height: 28px;
-        display: inline-block;
-        text-align: center;
+        // display: inline-block;
+        // text-align: center;
         // border-radius: 50%;
-        margin: 0 8px;
+        // margin: 0 8px;
         opacity: 0.7;
         transition: 0.3s ease;
     }
     .phone{
-        margin-left:40px;
+        // margin-left:40px;
     }
 }
-
 

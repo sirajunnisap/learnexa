@@ -139,3 +139,20 @@
         left: 0;
     }
 }
+
+.head{
+   
+        font-size: 88px;
+        color: white;
+
+        @include mobile {
+          font-size: 25px;
+          letter-spacing: 1px;
+          font-weight: 500;
+          padding-left:25px;
+          padding-bottom:38px;
+          text-align:center;
+        }
+     
+
+}

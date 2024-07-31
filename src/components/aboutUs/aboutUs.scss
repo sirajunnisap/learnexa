@@ -1,6 +1,10 @@
 
 @import "../../App.scss";
 
+h1, h2, h3,h4,p {
+  font-family: 'Raleway', sans-serif;
+}
+
 .methods {
   height: calc(100vh - 100px);
   overflow: hidden;
@@ -37,34 +41,38 @@
 
       }
 
-      // .about-h2 {
-      //   font-size: 30px;
-      //   color: rgb(150, 150, 150);
-      //   letter-spacing: 10px;
+      .about-h2 {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
       
-      //   @include mobile {
-      //     font-size: 25px;
-      //     letter-spacing: 5px;
-      //     margin-top:70px;
-      //   }
-      // }
+        @include mobile {
+          font-size: 18px;
+          // letter-spacing: 5px;
+          font-weight: 400;
+          margin-top:0px;
+        }
+      }
 
       .about-h1 {
         font-size: 88px;
         color: white;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 28px;
           margin-top: 100px;
+          letter-spacing: 3px;
         }
       }
 
       .about-p{
-        font-size: 20px;
+        font-size: 25px;
         color: rgb(196, 195, 195);
 
         @include mobile {
-          font-size: 16px;
+          font-size: 14px;
+          // text-align:none ;
+          line-height: 20px;
         }
       }
     }

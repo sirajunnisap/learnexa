@@ -20,17 +20,17 @@ const HomePage = () => {
         <Hero />
         <WhatsApp/>
       </section>
-      
-      <section id="WHY">
-        <Why />
+      <section id="CARDS">
+        <Cards />
       </section>
+      
 
       <section id="FEATURES">
         <Features />
       </section>
 
-      <section id="CARDS">
-        <Cards />
+      <section id="WHY">
+        <Why />
       </section>
 
       <section id="METHODS">

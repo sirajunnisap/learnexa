@@ -45,19 +45,20 @@ const Courses = () => {
 
   const items = [
     { name: "HOMEPAGE", path: "/" },
-    { name: "FEATURES", path: "FEATURES" },
-    { name: "SERVICES", path: "SERVICES" },
+    { name: "FEATURES", path: "/features" },
+    // { name: "SERVICES", path: "SERVICES" },
     {
       name: "COURSES",
       path: "#",
       onClick: () => setShowSubMenu(!showSubMenu),
       icon: true,
     },
-    { name: "TESTIMONIALS", path: "TESTIMONIALS" },
-    { name: "TEACHERS", path: "TEACHERS" },
-    { name: "OUR METHOD", path: "METHODS" },
-    { name: "CONTACT", path: "CONTACT" },
-    { name: "ABOUT", path: "ABOUT" },
+    { name: "TESTIMONIALS", path: "/testimonials" },
+    // { name: "TEACHERS", path: "TEACHERS" },
+    { name: "OUR METHOD", path: "/method" },
+    { name: "ABOUT", path: "/about" },
+    { name: "CONTACT", path: "/contact" },
+   
   ];
 
   const subMenuItems = [

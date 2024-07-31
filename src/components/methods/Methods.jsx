@@ -86,7 +86,7 @@ const Methods = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.1 }}
         >
-          <motion.h2 variants={textVariants}>the learnexa way</motion.h2>
+          <motion.h2 variants={textVariants}>The <span>learnexa</span> Way</motion.h2>
           <motion.h1 variants={textVariants}>
             Our Method
           </motion.h1>

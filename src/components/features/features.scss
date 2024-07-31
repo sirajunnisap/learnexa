@@ -1,7 +1,7 @@
 @import "../../App.scss";
 
 .features {
-    background-color: white;
+    background-color: rgb(251,251,251);
     padding: 40px 0px;
     width: 100%;
     height: 600px;
@@ -20,16 +20,17 @@
 }
   
 .features li {
+    background-color: rgb(255,255,255);
     display: flex;
     align-items: center;
     justify-content: center; /* Center the content */
     color: rgba(9, 9, 121, 1);
     font-size: 18px;
-    border: .5px solid rgba(195, 195, 195, 0.5); /* Border color */
+    border: .5px solid rgba(223, 222, 222, 0.5); /* Border color */
     border-radius: 10px; /* Rounded corners */
-    padding: 40px 50px; /* Padding inside the box */
+    padding: 25px 35px; /* Padding inside the box */
     text-align: center; /* Center text */
-}
+}   
 
 .features .icon {
     margin-right: 10px;
@@ -71,7 +72,7 @@
     }
 
     .features .title {
-        font-size: 16px;
+        font-size: 18px;
         margin-right: 0px;
     }
 }
@@ -106,3 +107,24 @@
         padding-left: 40px;
     }
 }
+
+
+h2 {
+    font-size: 30px;
+    color: black;
+    letter-spacing: 10px;
+  
+    @include mobile {
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      margin-top:70px;
+      margin-bottom: 30px;
+    }
+
+    span{
+        color: rgba(9, 9, 121, 1);
+        font-size: 27px;
+      font-weight: bold;
+    }
+  }

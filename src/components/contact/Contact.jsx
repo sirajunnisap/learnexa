@@ -62,23 +62,24 @@ const Contact = () => {
 
         <motion.div className="item" variants={variants}>
           {/* <h2>Email</h2> */}
-          <i className="fa-solid fa-location-dot"></i>learnexa HQ, alinchuvad , kizhisseri ,areekode road,kerala 673632
-          {/* <span>learnexaAcademy@gmail.com</span> */}
+          
+          <i className="fa-solid fa-location-dot address"></i>
+          <span>learnexa HQ, alinchuvad , kizhisseri ,areekode road,kerala 673632</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           {/* <h2>Address</h2> */}
-          <i className="fa-solid fa-envelope"></i>learnexaOfficial@gmail.com
-          {/* <span>malappuram , kerala</span> */}
+          <i className="fa-solid fa-envelope"></i>
+          <span>learnexaOfficial@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           {/* <h2>Phone</h2> */}
-          <i className="fa-solid fa-phone"></i>+91 123 5678 9024
-          {/* <span>+91 123 4567 890 </span> */}
+          <i className="fa-solid fa-phone"></i>
+          <div className="span">
+          <span>+91 123 4567 890 </span>
+          </div>
+          
         </motion.div>
-         
-        </div>
-      </motion.div>
-      <div className="social">
+        <div className="social">
         <a href="#"><i className="fa-brands fa-facebook"></i></a>
         <a href="#"><i className="fa-brands fa-instagram"></i></a>
         <a href="#"><i className="fa-brands fa-linkedin"></i></a>
@@ -86,8 +87,12 @@ const Contact = () => {
         <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
         <a href="#"><i className="fa-brands fa-youtube"></i></a>
       </div>
+        </div>
+      </motion.div>
+      
      
     </motion.div>
+    {/* <p className="copyright">2024 copy right | all right reserved</p> */}
     {/* <Footer/> */}
     </>
   );
