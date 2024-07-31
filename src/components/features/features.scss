@@ -1,71 +1,75 @@
+@import "../../App.scss";
+
 .features {
     background-color: white;
-    padding:40px;
+    padding: 40px 0px;
     width: 100%;
     height: 600px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .features ul {
+.features ul {
     list-style: none;
-    padding-left: 50px;
+    padding-left: 0; /* Remove padding to align with the box */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-  }
+    gap: 15px;
+}
   
-  .features li {
+.features li {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the content */
     color: rgba(9, 9, 121, 1);
     font-size: 18px;
-  }
-  
-  .features .icon {
+    border: .5px solid rgba(195, 195, 195, 0.5); /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px 50px; /* Padding inside the box */
+    text-align: center; /* Center text */
+}
+
+.features .icon {
     margin-right: 10px;
-  }
-  
-  .features .icon i {
+}
+
+.features .icon i {
     color: rgba(9, 9, 121, 1);
     font-size: 24px;
-  }
-  .features .title {
+}
+
+.features .title {
     margin-right: 10px;
     color: rgba(9, 9, 121, 1);
     font-size: 27px;
     font-weight: lighter;
-  }
-  
-  
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .features {
         flex-direction: column;
         height: auto;
-        // padding: 20px;
     }
 
     .features ul {
         grid-template-columns: repeat(2, 1fr);
-        // padding-left: 20px;
         gap: 0px;
     }
 
     .features li {
-        font-size: 6px;
+        font-size: 16px; /* Adjusted size for mobile */
     }
 
-    
     .features .icon {
-    margin-right: 0px;
+        margin-right: 0px;
 
-    i {
-        font-size: 15px;
+        i {
+            font-size: 15px;
+        }
     }
-  }
+
     .features .title {
         font-size: 16px;
         margin-right: 0px;
@@ -73,34 +77,32 @@
 }
 
 @media (max-width: 480px) {
+    .features {
+        padding-right: 0px;
+    }
 
-    .features  {
-      // height: auto;
-      padding-right: 0px;
-
-     ul {
+    .features ul {
         grid-template-columns: 1fr;
         padding-left: 0px;
-        gap: 25px;
+        gap: 15px;
     }
 
     li {
-        font-size: 14px;
+        font-size: 14px; /* Adjusted size for mobile */
     }
 
-     .icon {
-      margin-right: 0px;
-  
-      i {
-          font-size: 20px;
-      }
+    .icon {
+        margin-right: 10px;
+
+        i {
+            font-size: 20px;
+            padding-right: 40px;
+        }
     }
 
     .title {
         font-size: 18px;
-        margin-right: 0px;
+        margin-right: 10px;
         padding-left: 40px;
     }
-
-  }
 }

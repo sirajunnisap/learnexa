@@ -35,14 +35,54 @@
       line-height: 58px;
 
       @include mobile {
-        font-size: 36px;
+        font-size: 26px;
+        color: white;
       }
     }
 
+    .cntct-detail{
+    // display:flex;
+    align-items:left;
+    justify-content:center;
+      // gap:5px;
+      padding: 15px;
+
+
+    }
+    .item{
+      text-align: left;
+      font-size:18px;
+      padding:12px 0;
+    }
+i{
+  color: white;
+
+}
     span {
       font-weight: 300;
     }
   }
+
+  .social a{
+    font-size: 24px;
+    color: white;
+    // border: 2px solid rgb(79, 79, 79);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    // border-radius: 50%;
+    margin: 0 px;
+    // opacity: 0.7;
+    transition: 0.3s ease;
+}
+.social a:hover{
+   transform: scale(1.2)translateY(-10px);
+   opacity: 1;
+  //  color: rgb(255, 78, 78); 
+  //  border: 2px solid rgb(255, 78, 78);
+}
 
   .formContainer {
     flex: 1;

@@ -33,7 +33,7 @@ const Cards = () => {
           We curate plans for your child that rightfully serve outcomes unique to their need. Each child&apos;s learning journey is curated by experts who know how learning can be made better.</p>
            
             <div className='card-image'>
-              <img src="/hero2.jpg" alt="" />
+              {/* <img src="/hero2.jpg" alt="" /> */}
             </div>
           </div>
         </motion.div>
@@ -52,7 +52,7 @@ const Cards = () => {
               Our tutors are available for your child to help with any kind of confusion doubts and even exam-related anxiety to help your child lead with confidence. </p>
             
             <div className='card-image'>
-              <img src="/hero2.jpg" alt="" />
+              {/* <img src="/hero2.jpg" alt="" /> */}
             </div>
           </div>
         </motion.div>
@@ -70,7 +70,7 @@ const Cards = () => {
              
               We provide special care to address the weak points from the get-go, from the first session till the last our first priority will be to provide satisfaction in conquering the child&apos;s weak areas. </p>
             <div className='card-image'>
-              <img src="/hero2.jpg" alt="" />
+              {/* <img src="/hero2.jpg" alt="" /> */}
             </div>
           </div>
         </motion.div>
@@ -88,7 +88,7 @@ const Cards = () => {
               each student is monitored with every little detail after each session gathering secure and complete data that allows us to inform you on your child&apos;s progress and the necessary next steps to take. pariatur tempore ab ipsa earum, esse maiores tenetur.
               </p>
              <div className='card-image'>
-              <img src="/hero2.jpg" alt="" />
+              {/* <img src="/hero2.jpg" alt="" /> */}
             </div>
           </div>
         </motion.div>

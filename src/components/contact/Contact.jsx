@@ -57,21 +57,35 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Contact Us</motion.h1>
+        <motion.h1 variants={variants}>Feel Free To Contact Us!</motion.h1>
+        <div className="cntct-detail">
+
         <motion.div className="item" variants={variants}>
-          <h2>Email</h2>
-          <span>learnexaAcademy@gmail.com</span>
+          {/* <h2>Email</h2> */}
+          <i className="fa-solid fa-location-dot"></i>learnexa HQ, alinchuvad , kizhisseri ,areekode road,kerala 673632
+          {/* <span>learnexaAcademy@gmail.com</span> */}
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>malappuram , kerala</span>
+          {/* <h2>Address</h2> */}
+          <i className="fa-solid fa-envelope"></i>learnexaOfficial@gmail.com
+          {/* <span>malappuram , kerala</span> */}
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+91 123 4567 890 </span>
+          {/* <h2>Phone</h2> */}
+          <i className="fa-solid fa-phone"></i>+91 123 5678 9024
+          {/* <span>+91 123 4567 890 </span> */}
         </motion.div>
+         
+        </div>
       </motion.div>
-    
+      <div className="social">
+        <a href="#"><i className="fa-brands fa-facebook"></i></a>
+        <a href="#"><i className="fa-brands fa-instagram"></i></a>
+        <a href="#"><i className="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i className="fa-brands fa-twitter"></i></a>
+        <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i className="fa-brands fa-youtube"></i></a>
+      </div>
      
     </motion.div>
     {/* <Footer/> */}

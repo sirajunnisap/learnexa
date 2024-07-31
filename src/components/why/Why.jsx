@@ -4,34 +4,7 @@
 import "./why.scss";
 import { motion } from "framer-motion";
 
-// const textVariants1 = {
-//   hidden: {
-//     x: -500,
-//     opacity: 0,
-//   },
-//   visible: {
-//     x: 0,
-//     opacity: 1,
-//     transition: {
-//       duration: 1,
-//       staggerChildren: 0.1,
-//     },
-//   },
-// };
 
-// const textVariants2 = {
-//   hidden: {
-//     x: 500,
-//     opacity: 0,
-//   },
-//   visible: {
-//     x: 0,
-//     opacity: 1,
-//     transition: {
-//       duration: 1,
-//     },
-//   },
-// };
 
 const textVariants1 = {
   hidden: {

@@ -1,6 +1,7 @@
 import Background from "../background/Background";
 import Cards from "../contentLng/Cards";
 import ContentLng from "../contentLng/ContentLng";
+import Feature from "../contentLng/Feature";
 import Tutors from "../contentLng/Tutors";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
@@ -41,17 +42,17 @@ const Arabic = () => {
     tutor:[
       {
         image:"/tutor.png",
-        name:"arabic teacher",
+        name:"Sabith",
         descr:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa sint sapiente autem esse eligendi fugiat, fuga tenetur nostrum. Quam blanditiis beatae natus perspiciatis tempore error cupiditate accusamus, ad debitis fugit."
       },
       {
         image:"/tutor.png",
-        name:"arabic teacher",
+        name:"Janna",
         descr:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa sint sapiente autem esse eligendi fugiat, fuga tenetur nostrum. Quam blanditiis beatae natus perspiciatis tempore error cupiditate accusamus, ad debitis fugit."
       },
       {
         image:"/tutor.png",
-        name:"arabic teacher",
+        name:"Hana",
         descr:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa sint sapiente autem esse eligendi fugiat, fuga tenetur nostrum. Quam blanditiis beatae natus perspiciatis tempore error cupiditate accusamus, ad debitis fugit."
       }
     ] ,
@@ -73,6 +74,9 @@ const Arabic = () => {
         
       </section>
       <section className="cards">
+
+    <Feature/>
+
      <div className="cards">
      <Cards  content={cardCnt}/>
      </div>

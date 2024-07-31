@@ -10,11 +10,14 @@ const Tutors = ({content}) => {
               
            
         <div className="card" key={index}>
+          <div className="image-tutor">
           <img src={item.image} alt="Tutor" />
+          </div>
+
           <div className="about">
           <h3 className='about-name'>{item.name}</h3>
-          <p className='about-tag'>Tutor</p>
-              <p className="about-descr">{item.descr}</p>
+          <p className='about-tag'>Arabic Teacher</p>
+              {/* <p className="about-descr">{item.descr}</p> */}
               
           </div>
         </div>  

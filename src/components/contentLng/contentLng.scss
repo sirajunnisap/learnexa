@@ -32,11 +32,11 @@
 
       h2 {
         font-size: 40px;
-        color: orange;
+        color: white;
         letter-spacing: 3px;
         text-align:center;
         @include mobile {
-          margin-top: 190px;
+          margin-top: 280px;
           font-size: 20px;
           padding: 0 10px ;
         }
@@ -44,7 +44,7 @@
 
       p {
         font-size: 25px;
-        color: white;
+        color: rgb(202, 200, 200);
         text-align: justify;
         @include mobile {
           font-size: 20px;
@@ -127,19 +127,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px; // Add some padding for spacing around the cards
+  // padding: 20px; // Add some padding for spacing around the cards
   gap: 20px; // Add some gap between the cards
-
+// padding-left: 2px;
   .card {
     background-color: #0E4E91;
     backdrop-filter: blur(20px);
     border: 1px solid rgba(224, 224, 224, 0.25);
-    padding: 30px;
+    padding: 30px 20px;
     border-radius: 1em;
     cursor: pointer;
     transition: 0.3s ease;
     overflow: hidden;
-    width: calc(50% - 20px); // Ensure two cards fit per row, accounting for the gap
+    width:300px; // Ensure two cards fit per row, accounting for the gap
     height: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -147,13 +147,14 @@
     
     @include mobile {
       height: 50%;
-      width: 100%;
+      width: 320px;
+      
 
       h2{
         padding-bottom: 10px;
       }
       p{
-        text-align:justify;
+        text-align:left;
       }
       
     }
@@ -172,6 +173,7 @@
   .card {
     margin-top: 50px;
     background-color: white;
+    border:none;
     // border: 1px solid rgba(224, 224, 224, 0.25);
     border-radius: 1em;
     // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -201,6 +203,8 @@
       width: 100%;
       text-align: center;
       
+      
+
       .about-name{
         font-weight: 800;
         padding: 10px 0px;
@@ -209,6 +213,7 @@
       .about-tag{
         font-weight: lighter;
         padding-bottom: 3px;
+        padding-left: 75px;
       }
 
       .about-descr{
@@ -219,5 +224,119 @@
 
       }
     }
+  }
+}
+
+
+
+.feature {
+  position: relative; 
+  // background-color: white;
+  padding: 40px 0px;
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+    padding-left: 0; /* Remove padding to align with the box */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  li {
+    // background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    // color: rgba(9, 9, 121, 1);
+        color:white;
+    font-size: 18px;
+    border: .5px solid rgba(195, 195, 195, 0.5); /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px 50px; /* Padding inside the box */
+    text-align: center; /* Center text */
+  }
+
+  .icon {
+    margin-right: 10px;
+
+    i {
+      color: rgba(9, 9, 121, 1);
+      font-size: 24px;
+    }
+  }
+  .title {
+    margin-right: 10px;
+    color: white;
+    font-size: 27px;
+    font-weight: lighter;
+  }
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .feature {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .feature ul {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0px;
+  }
+
+  .feature li {
+      font-size: 16px; /* Adjusted size for mobile */
+  }
+
+  .feature .icon {
+      margin-right: 0px;
+
+      i {
+          font-size: 15px;
+      }
+  }
+
+  .feature .title {
+      font-size: 16px;
+      margin-right: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature {
+      padding-right: 0px;
+  }
+
+  .feature ul {
+      grid-template-columns: 1fr;
+      padding-left: 0px;
+      gap: 15px;
+  }
+
+  li {
+      font-size: 14px; /* Adjusted size for mobile */
+  }
+
+  .icon {
+      margin-right: 10px;
+
+      i {
+          font-size: 20px;
+          padding-right: 40px;
+      }
+  }
+
+  .title {
+      font-size: 18px;
+      margin-right: 10px;
+      padding-left: 40px;
   }
 }

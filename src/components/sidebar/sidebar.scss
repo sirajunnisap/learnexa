@@ -1,14 +1,13 @@
+
+
 @import "../../App.scss";
 
 .sidebar {
-
-
   display: none; // Hide by default
 
   @include mobile {
     display: flex; // Show on mobile
   }
-
 
   display: flex;
   flex-direction: column;
@@ -16,15 +15,10 @@
   justify-content: center;
   background-color: white;
   color: black;
-
-  
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-  
-  
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
 
   .bg {
     z-index: 999;
@@ -36,8 +30,7 @@
     background: white;
 
     @include mobile {
-      width: 273PX;
-      // display:none;
+      width: 273px;
     }
 
     .links {
@@ -49,18 +42,48 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-      color: rgba(9,9,121,1);
-      // z-index: 1000;
+      color: rgba(9, 9, 121, 1);
 
-      @include mobile{
-       padding-bottom: 350px;
+      @include mobile {
+        padding-bottom: 350px;
       }
+
       a {
         font-size: 40px;
 
         @include mobile {
           font-size: 20px;
-         
+        }
+      }
+
+      .has-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .icon {
+          margin-left: 10px;
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .sub-menu-item {
+        padding-left: 20px; // Indent sub-menu items
+        margin-top: -15px; // Adjust vertical spacing
+        // background-color: rgba(9, 9, 121, 0.1); // Background color for sub-menu
+        color: rgba(9, 9, 121, 1); // Different color for sub-menu
+        font-size: 18px; // Smaller font size for sub-menu
+        width: calc(100% - 40px); // Adjust width to match parent width
+        text-align: center;
+        padding: 10px 0; // Padding for better visibility
+
+        @include mobile {
+          font-size: 16px;
         }
       }
     }
@@ -78,8 +101,5 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-
-    
   }
 }
-

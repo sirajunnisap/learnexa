@@ -95,7 +95,7 @@ const ContentLng = ({ content }) => {
         Learnexa Academy 
       </motion.div> */}
       <div className="ctntimageContainer">
-        <img src={content.image} alt="" />
+        {/* <img src={content.image} alt="" /> */}
       </div>
     </div>
   );
