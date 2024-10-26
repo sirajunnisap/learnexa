@@ -19,7 +19,7 @@ const Feature = () => {
             <span className="icon">
               <i className="fa-solid fa-book"></i>
             </span>
-            <span className="title">Special Modules </span>
+            <span className="title">Language proficiency</span>
           </li>
           <li>
             <span className="icon">
@@ -31,38 +31,15 @@ const Feature = () => {
             <span className="icon">
               <i className="fa-solid fa-check"></i>
             </span>
-            <span className="title"> 100% Result</span>
+            <span className="title"> Professional Perks</span>
           </li>
           <li>
             <span className="icon">
               <i className="fa-solid fa-user-friends"></i>
             </span>
-            <span className="title">Individual Attention</span>
+            <span className="title">Spoken Mastery</span>
           </li>
-          <li>
-            <span className="icon">
-              <i className="fa-solid fa-chart-line"></i>
-            </span>
-            <span className="title">Expert Assessments</span>
-          </li>
-          <li>
-            <span className="icon">
-              <i className="fa-solid fa-stopwatch"></i>
-            </span>
-            <span className="title">Result in 15 Days</span>
-          </li>
-          <li>
-            <span className="icon">
-              <i className="fa-solid fa-chart-bar"></i>
-            </span>
-            <span className="title">Progress Tracking</span>
-          </li>
-          <li>
-            <span className="icon">
-              <i className="fa-solid fa-book-reader"></i>
-            </span>
-            <span className="title">Reading and writing</span>
-          </li>
+          
         </ul>
       </div>
     </>

@@ -9,8 +9,8 @@ const Cards = ({content}) => {
     <div className='cards' >
     {content.map((item,index)=>(
       <div className="card" key={index}>
-        <h2>{item.h}</h2>
-        <p>{item.p}</p>
+        <h2  className="cardh">{item.h}</h2>
+        <p className="cardp">{item.p}</p>
       </div>
        ))}
     </div>

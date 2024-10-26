@@ -72,18 +72,19 @@
         }
       }
 
+      
       .sub-menu-item {
-        padding-left: 20px; // Indent sub-menu items
-        margin-top: -15px; // Adjust vertical spacing
-        // background-color: rgba(9, 9, 121, 0.1); // Background color for sub-menu
-        color: rgba(9, 9, 121, 1); // Different color for sub-menu
-        font-size: 18px; // Smaller font size for sub-menu
-        width: calc(100% - 40px); // Adjust width to match parent width
-        text-align: center;
-        padding: 10px 0; // Padding for better visibility
+        margin-top: 25px; // Adjust vertical spacing
+        color: rgba(9, 9, 121, 1); // Text color
+        width: 100%; // Match parent width
+        z-index: 1001; 
+        border: none; // Ensure no border is applied
+        background-color: transparent; // Ensure no background is applied
+        text-align: center; // Align text as needed
+       font-size: 20px;
 
         @include mobile {
-          font-size: 16px;
+          font-size: 20px;
         }
       }
     }

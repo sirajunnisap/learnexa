@@ -2,39 +2,41 @@ import Background from "../background/Background";
 import Cards from "../contentLng/Cards";
 import ContentLng from "../contentLng/ContentLng";
 import Feature from "../contentLng/Feature";
-import Tutors from "../contentLng/Tutors";
+// import Tutors from "../contentLng/Tutors";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import "./arabic.scss";
+import Testimonials from '../testimonials/Testimonials';
 
 const Arabic = () => {
 
   const  languageCnt = {
-    title:"Mastering the Language: The Best Online Learning Arabic Course For Effortless Education",
+    title:"Achieve Fluency in Arabic with Learnexa Language Academy",
     firstpara: 
-      "In today's interconnected world, mastering Arabic is a valuable skill that opens doors to cultural understanding and communication. If you're eager to embark on an enriching linguistic journey, look no further than LEARNEXA  Arabic subject tuition—your gateway to seamless language acquisition.",
-    image:"/language.png"
+      "Unlock the full potential of Arabic with Learnexa Language Academy's comprehensive online classes! Mastering Arabic—whether speaking, reading, or writing—offers a significant advantage in today’s global communication landscape. With Arabic being a crucial language for millions, our goal is to support your success in every aspect of learning Arabic. Join us at Learnexa and embark on a journey to fluency in Arabic.",
+    scdtitle:"Why Opt for Arabic Language Classes?",
+    scdpara:"At Learnexa Language Academy, our Arabic language classes offer an excellent way to master speaking, reading, and writing in Arabic. Designed to efficiently develop fluency, these classes provide long-term benefits in communication and open new opportunities. Tailored for all levels, our courses ensure that each student can easily grasp the basics and progress to advanced skills. Whether you're a beginner or refining your proficiency, Learnexa offers a clear, structured path to mastering Arabic."
   }
 
   
-   
+  // Speak, Read, and Write Arabic with Ease: Comprehensive Learning Courses
   const cardCnt = 
     [
       {
-      h:"Arabic Unveiled",
-      p:"Embarking on the quest to master Arabic begins with LEARNEXA Acadamey Arabic Tuition, a beacon of excellence in online language education. Tailored to cater to various proficiency levels, this platform makes the intricate Arabic language accessible to learners worldwide."
+      h:"Selected Sessions",
+      p:"Our online Arabic classes offer carefully picked lessons that help you learn the language well. These lessons make it easier for you to understand and use Arabic like a native speaker. The course is a great way to improve your speaking, reading, and writing."
       },
       {
-        h:"Arabic Unveiled",
-        p:"Embarking on the quest to master Arabic begins with LEARNEXA Acadamey Arabic Tuition, a beacon of excellence in online language education. Tailored to cater to various proficiency levels, this platform makes the intricate Arabic language accessible to learners worldwide."
+        h:"Supportive Learning Environment",
+        p:"Our online Arabic class gives you a safe space to practice your language skills. This course helps you build confidence while you learn to speak, read, and write Arabic."
       },
       {
-        h:"Arabic Unveiled",
-        p:"Embarking on the quest to master Arabic begins with LEARNEXA Acadamey Arabic Tuition, a beacon of excellence in online language education. Tailored to cater to various proficiency levels, this platform makes the intricate Arabic language accessible to learners worldwide."
+        h:"Instant Improvement",
+        p:"This Arabic course helps you get better by practicing right away. We focus on fixing mistakes as soon as they happen, so you can quickly improve your speaking, reading, and writing skills."
       },
       {
-        h:"Arabic Unveiled",
-        p:"Embarking on the quest to master Arabic begins with LEARNEXA Acadamey Arabic Tuition, a beacon of excellence in online language education. Tailored to cater to various proficiency levels, this platform makes the intricate Arabic language accessible to learners worldwide."
+        h:"Speak Like a Native",
+        p:"This Arabic class helps you use the language like a native. By mastering speaking, reading, and writing, you will feel more confident using Arabic in your everyday life."
       },
     ]
   
@@ -80,9 +82,9 @@ const Arabic = () => {
      <div className="cards">
      <Cards  content={cardCnt}/>
      </div>
-         
+     <Testimonials />
 
-          <Tutors content={tutorCnt}/>
+          {/* <Tutors content={tutorCnt}/> */}
         
       </section>
       <section>
