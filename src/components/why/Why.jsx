@@ -118,7 +118,6 @@ const Why = () => {
             viewport={{ once: false, amount: 0.3 }}
           >
             <div className="timeline-dot"></div>
-            {/* <div className="timeline-date">2024</div> */}
             <div className="timeline-content">
             <p>
             Reading and writing taught with personalized support. </p>
